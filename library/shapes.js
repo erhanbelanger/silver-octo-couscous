@@ -8,26 +8,26 @@ class Shape {
     }
   
     render() {
-      // Implement rendering logic for the shape
+      return ''; // Implement rendering logic for the shape and return it as a string
     }
-  }
-  
-  class Triangle extends Shape {
+}
+
+class Triangle extends Shape {
     render() {
-      // Implement rendering logic for a triangle
+      return `<polygon points="150, 18 244, 182 56, 182" fill="${this.color}" />`;
     }
-  }
-  
-  class Circle extends Shape {
+}
+
+class Circle extends Shape {
     render() {
-      // Implement rendering logic for a circle
+      return `<circle cx="150" cy="150" r="100" fill="${this.color}" />`;
     }
-  }
-  
-  class Square extends Shape {
+}
+
+class Square extends Shape {
     render() {
-      // Implement rendering logic for a square
+      return `<rect x="50" y="50" width="100" height="100" fill="${this.color}" />`;
     }
-  }
-  
-  module.exports = { Triangle, Circle, Square };
+}
+
+module.exports = { Triangle, Circle, Square };
