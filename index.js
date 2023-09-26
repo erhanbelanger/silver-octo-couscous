@@ -1,4 +1,4 @@
-const { getUserInput } = require('./lib/userInput');
+const { getUserInput } = require('./library/userInput');
 const { Triangle, Circle, Square } = require('./lib/shapes');
 const { saveSVGFile } = require('./lib/fileUtils');
 
